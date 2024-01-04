@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('clothing') }}">Одежда</a></li>
+                <li><a href="{{ url_for('shoes') }}" >Обувь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин одежды</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - {{ category }}{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>{{ category }}</h2>
+        Описание одежды
+        <ul>
+            <li><a href='#'>Товар 1</a></li>
+            <li><a href='#'>Товар 2</a></li>
+        </ul>
+    </section>
+{% endblock %}

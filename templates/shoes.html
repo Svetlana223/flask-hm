@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - {{ product_name }}{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>{{ product_name }}</h2>
+
+        <p>Описание обуви</p>
+    </section>
+{% endblock %}
